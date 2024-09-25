@@ -1,0 +1,78 @@
+/* Style pour le conteneur principal */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh; /* Prend toute la hauteur de la fenêtre */
+  background-color: #f0f0f0; /* Couleur de fond légère */
+  font-family: Arial, sans-serif; /* Police de caractères */
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.number_container{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+/* Style pour les boutons de nombre */
+.number-button, .number {
+  background-color: #3498db; /* Couleur bleu */
+  color: white; /* Texte blanc */
+  border: none; /* Pas de bordure */
+  border-radius: 0.5em; /* Coins arrondis */
+  padding: 1em 2em; /* Espacement intérieur */
+  margin: 0.5em; /* Espacement extérieur */
+  font-size: 1em; /* Taille de police */
+  cursor: pointer; /* Pointeur de souris */
+  transition: background-color 0.3s; /* Transition douce pour la couleur de fond */
+}
+
+/* Style au survol pour les boutons de nombre */
+.number-button:hover {
+  background-color: #2980b9; /* Couleur bleu plus foncé au survol */
+}
+
+
+
+/* Style pour les boutons d'opération */
+.operator-button {
+  background-color: #e67e22; /* Couleur orange */
+  color: white; /* Texte blanc */
+  border: none; /* Pas de bordure */
+  border-radius: 5px; /* Coins arrondis */
+  padding: 10px 20px; /* Espacement intérieur */
+  margin: 10px; /* Espacement extérieur */
+  font-size: 16px; /* Taille de police */
+  cursor: pointer; /* Pointeur de souris */
+  transition: background-color 0.3s; /* Transition douce pour la couleur de fond */
+}
+
+/* Style au survol pour les boutons d'opération */
+.operator-button:hover {
+  background-color: #d35400; /* Couleur orange plus foncé au survol */
+}
+
+/* Style pour la carte de résultat */
+.result_card {
+  background-color: white; /* Fond blanc */
+  border-radius: 8px; /* Coins arrondis */
+  padding: 20px; /* Espacement intérieur */
+  margin-top: 20px; /* Espacement au-dessus */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour le relief */
+}
+
+/* Style pour le texte du résultat */
+.result_card p {
+  font-size: 20px; /* Taille de police */
+  color: #2c3e50; /* Couleur de texte sombre */
+  text-align: center; /* Centrer le texte */
+}

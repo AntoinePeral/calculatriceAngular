@@ -1,0 +1,27 @@
+
+<main>
+    <h1>Calculatrice!</h1>
+
+    <div class="container">
+      <div >
+        <button (click)="generateNumb1()" class="number-button">Get random Number 1 </button>
+        <button (click)="generateNumb2()" class="number-button">Get random Number 2 </button>
+      </div>
+    
+      <div class="number_container">
+          <p class="number">{{randomNumber1}}</p>
+          <p class="number">{{randomNumber2}}</p>
+      </div>
+      
+      <div>
+        <button (click)="calculateResult('+')" class="operator-button"> + </button>
+        <button (click)="calculateResult('-')" class="operator-button"> - </button>
+        <button (click)="calculateResult('/')" class="operator-button"> / </button>
+        <button (click)="calculateResult('*')" class="operator-button"> * </button>
+      </div>
+      
+      <div class="result_card">
+        <p>Résultat : {{result}}</p>
+      </div>
+    </div>
+</main>
